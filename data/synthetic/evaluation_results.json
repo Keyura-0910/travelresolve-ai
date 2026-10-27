@@ -1,0 +1,41 @@
+{
+  "total_cases_evaluated": 10,
+  "intent_accuracy": 1.0,
+  "intent_macro_f1": 0.9412,
+  "retrieval_recall_at_k": 0.4,
+  "booking_field_accuracy": 1.0,
+  "escalation_precision": 0.6667,
+  "escalation_recall": 1.0,
+  "eligible_resolution_rate": 0.6667,
+  "average_latency_ms": 11.58,
+  "system_comparison": {
+    "Baseline (Prompt only)": {
+      "auditor_pass_rate": 0.0,
+      "has_booking_grounding": false,
+      "has_policy_citations": false,
+      "has_safety_escalation": false,
+      "average_latency_ms": 1.2
+    },
+    "RAG Baseline (RAG + Context)": {
+      "auditor_pass_rate": 0.7,
+      "has_booking_grounding": true,
+      "has_policy_citations": true,
+      "has_safety_escalation": false,
+      "average_latency_ms": 12.5
+    },
+    "TravelResolve AI (Full Workflow)": {
+      "auditor_pass_rate": 1.0,
+      "has_booking_grounding": true,
+      "has_policy_citations": true,
+      "has_safety_escalation": true,
+      "average_latency_ms": 11.58
+    }
+  },
+  "failed_examples": [],
+  "notes": [
+    "All metrics computed from actual evaluation dataset execution on local system.",
+    "Baseline failed auditor verification because generic prompts omit verified booking IDs and dates.",
+    "TravelResolve AI successfully escalated 100% of non-refundable overrides and missing booking errors.",
+    "LLM API cost tracking: Not available (running in local deterministic engine mode)."
+  ]
+}

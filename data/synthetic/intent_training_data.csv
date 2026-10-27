@@ -1,0 +1,151 @@
+text,intent
+Can you send my booking confirmation email again?,booking_confirmation
+Did my hotel reservation go through for TRV1025?,booking_confirmation
+I haven't received confirmation for my Miami stay yet.,booking_confirmation
+Where can I find my itinerary and booking confirmation code?,booking_confirmation
+Please re-send my booking voucher and confirmation receipt.,booking_confirmation
+Is my reservation confirmed at Grand Horizon Resort?,booking_confirmation
+I want to verify if my hotel booking is active and confirmed.,booking_confirmation
+Can you confirm that my room is booked for tomorrow night?,booking_confirmation
+Need a copy of my booking confirmation document for visa purposes.,booking_confirmation
+"I booked 10 minutes ago, where is my reservation confirmation?",booking_confirmation
+Please check if my booking reference TRV1025 is valid and active.,booking_confirmation
+Could you verify my booking status? I never got a confirmation text.,booking_confirmation
+I need the official confirmation voucher for check-in at the front desk.,booking_confirmation
+Is my hotel booking confirmed under Elena Rostova?,booking_confirmation
+Where is my reservation receipt? I need to print the confirmation.,booking_confirmation
+Can you check if my hotel booking is confirmed or pending?,booking_confirmation
+Confirmation email missing from my inbox for booking TRV1029.,booking_confirmation
+Please verify if my reservation was successfully booked.,booking_confirmation
+Can I get proof of my confirmed booking for my company expense report?,booking_confirmation
+Is my reservation secured for my upcoming trip next week?,booking_confirmation
+Send confirmation details for my room reservation please.,booking_confirmation
+Did the hotel receive my confirmation from your website?,booking_confirmation
+I need my confirmation number to check in online.,booking_confirmation
+Can you resend the confirmation letter for TRV1027?,booking_confirmation
+Check confirmation status for my holiday stay.,booking_confirmation
+I need to cancel my hotel reservation TRV1026 immediately.,cancellation
+Please cancel my hotel stay at Alpine Pine Lodge.,cancellation
+How do I cancel my upcoming trip?,cancellation
+Can I cancel my room without incurring penalty fees?,cancellation
+Need to cancel my reservation due to a medical family emergency.,cancellation
+Cancel booking TRV1029 please as my flights were cancelled.,cancellation
+"I won't be able to travel, please process cancellation.",cancellation
+Cancel my reservation for next week and confirm when done.,cancellation
+Is it possible to cancel my hotel room today?,cancellation
+"Please cancel booking TRV1027, my plans have changed.",cancellation
+I want to cancel my reservation right now.,cancellation
+Please abort my booking and cancel all hotel nights.,cancellation
+How much does it cost to cancel my room at Grand Horizon?,cancellation
+Requesting urgent cancellation for reservation TRV1025.,cancellation
+Can I cancel my booking online or do you have to do it?,cancellation
+I have to cancel our vacation reservation immediately.,cancellation
+Please initiate the cancellation process for my booking.,cancellation
+"Cancel my room reservation, cannot make the journey.",cancellation
+I am writing to cancel my hotel booking TRV1026.,cancellation
+Cancel this reservation before the deadline passes.,cancellation
+Please drop my reservation for Aspen this weekend.,cancellation
+"Need to cancel my stay, how soon will the cancellation take effect?",cancellation
+Can you cancel my booking and send a cancellation confirmation?,cancellation
+I want to void my room booking at Canal Bridge Hotel.,cancellation
+Please cancel my hotel booking right away.,cancellation
+When will I get my refund back for the cancelled room?,refund
+I was charged after cancelling and want a full refund.,refund
+Please issue a full refund to my original credit card.,refund
+Has my refund been processed yet for booking TRV1028?,refund
+Where is my refund receipt and reference number?,refund
+I need my money back for the cancelled booking.,refund
+Why haven't I received my refund of $560.00 yet?,refund
+How many business days does a refund take to appear in my bank?,refund
+I am entitled to a 100% refund according to your cancellation policy.,refund
+"The hotel was closed, I demand an immediate refund.",refund
+Can I get a refund for the unused night of my stay?,refund
+Please verify if the refund of $1240.00 was approved.,refund
+"I cancelled within the free cancellation window, where is my refund?",refund
+"My refund status shows pending for over 10 days, please help.",refund
+Requesting refund reimbursement for travel interruption.,refund
+Why was my refund partial instead of full?,refund
+Please release the refunded amount back to my debit card.,refund
+Is there a refund processing fee deducted from my return?,refund
+Can you expedite my refund payout?,refund
+I need clarification on the refund amount credited to my account.,refund
+When will the refund show up on my credit card statement?,refund
+"The room was uninhabitable, refund my money immediately.",refund
+Check the refund status for cancelled reservation TRV1028.,refund
+Please credit the refund back to PayPal.,refund
+How long do refunds take for international bookings?,refund
+Can I change my check-in date to next Friday?,booking_modification
+I need to add another guest to my room reservation.,booking_modification
+Can we change from a Queen room to an Ocean View King bed suite?,booking_modification
+Please modify my travel dates for booking TRV1027.,booking_modification
+Can I extend my stay by two extra nights at the hotel?,booking_modification
+Need to change the primary guest name on the reservation.,booking_modification
+Is it possible to reschedule my booking to next month?,booking_modification
+"I want to arrive one day early, can you adjust my booking?",booking_modification
+Can I shorten my reservation by one night?,booking_modification
+Please upgrade my room type for booking TRV1025.,booking_modification
+How do I modify my hotel dates without cancelling the booking?,booking_modification
+Can I switch my reservation to a different branch of the hotel?,booking_modification
+Please update the contact phone number and guest count on my file.,booking_modification
+I need to reschedule our vacation dates due to work conflicts.,booking_modification
+Can we change our check-out date from Tuesday to Thursday?,booking_modification
+Please change the booking name to my colleague's name.,booking_modification
+How do I add breakfast to my existing hotel reservation?,booking_modification
+Can I modify the room preference to non-smoking and high floor?,booking_modification
+"We want to change our suite type, what is the price difference?",booking_modification
+Please amend my booking dates for TRV1029.,booking_modification
+Can you push my check-in back by two days?,booking_modification
+I would like to update the guest details for my stay.,booking_modification
+Requesting a date change on my pending reservation.,booking_modification
+Can we shift our trip dates to the following weekend?,booking_modification
+Modify my reservation to include two twin beds instead of one king.,booking_modification
+My credit card was declined during hotel checkout payment.,payment_issue
+I was charged twice on my card for booking TRV1030.,payment_issue
+"I received a payment failed notification, how can I retry?",payment_issue
+Can I switch my payment method for my upcoming hotel stay?,payment_issue
+Payment error occurred while processing my card.,payment_issue
+Why is my payment status showing failed for TRV1030?,payment_issue
+There is an unexpected charge on my bank statement from your site.,payment_issue
+Can I pay with a different credit card at the hotel upon arrival?,payment_issue
+My card was debited but the website says payment not received.,payment_issue
+How do I update an expired credit card on my active reservation?,payment_issue
+I keep getting an invalid CVV payment error code.,payment_issue
+Can I pay with PayPal or Apple Pay instead of card?,payment_issue
+Why was I billed in USD instead of EUR?,payment_issue
+The payment gateway crashed when I clicked complete booking.,payment_issue
+Need help resolving a failed payment transaction for my booking.,payment_issue
+I got an unauthorized duplicate charge for $780.00.,payment_issue
+"Payment verification link expired, can you send a new link?",payment_issue
+Can you verify if my payment of $890.50 was successfully cleared?,payment_issue
+"The system says payment pending, but funds were deducted from my bank.",payment_issue
+How do I clear the payment error on my account?,payment_issue
+Can I split the payment between two credit cards?,payment_issue
+"The hotel front desk says my booking isn't paid, but you charged me.",payment_issue
+Payment failed due to 3D Secure verification timeout.,payment_issue
+Please help me complete the payment for my pending reservation.,payment_issue
+Why did my transaction fail on the payment screen?,payment_issue
+What time is check-in and check-out at the resort?,general_travel_query
+Does Grand Horizon Resort offer free Wi-Fi and valet parking?,general_travel_query
+Is breakfast included in my room rate or is it an extra charge?,general_travel_query
+Do you have an airport shuttle service from Miami International?,general_travel_query
+Are pets allowed in the hotel rooms?,general_travel_query
+What amenities does Alpine Pine Lodge offer in the winter?,general_travel_query
+Can the hotel store our luggage before our room is ready?,general_travel_query
+Is there an age requirement to check in at the front desk?,general_travel_query
+Do the rooms have a mini-fridge and coffee maker?,general_travel_query
+How far is the hotel from the downtown city center and metro?,general_travel_query
+Does the hotel have an indoor swimming pool and fitness gym?,general_travel_query
+Can I request a quiet room on an upper floor away from the elevator?,general_travel_query
+Are there vegetarian dining options available in the hotel restaurant?,general_travel_query
+What is the hotel's policy on smoking and noise hours?,general_travel_query
+Is the front desk open 24 hours for early morning departures?,general_travel_query
+Does the resort charge a daily resort fee upon arrival?,general_travel_query
+What electrical outlet plugs are used in the hotel rooms?,general_travel_query
+Can the hotel concierge arrange local sightseeing tours?,general_travel_query
+Is tap water drinkable at the property?,general_travel_query
+Do you provide baby cribs or extra rollaway beds?,general_travel_query
+What is the distance between the hotel and the beach?,general_travel_query
+Are there conference and meeting facilities at the hotel?,general_travel_query
+Can I receive postal packages at the hotel front desk before arrival?,general_travel_query
+Is there a spa and sauna available for hotel guests?,general_travel_query
+What are the restaurant opening hours for dinner?,general_travel_query

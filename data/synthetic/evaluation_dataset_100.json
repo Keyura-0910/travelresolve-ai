@@ -1,0 +1,902 @@
+[
+  {
+    "case_id": "EVAL-0001",
+    "customer_message": "Can you send the booking confirmation voucher for my stay under TRV1025?",
+    "booking_id": "TRV1025",
+    "expected_intent": "booking_confirmation",
+    "expected_policy_id": "POL-CONF-003",
+    "expected_should_escalate": false,
+    "is_edge_case": false
+  },
+  {
+    "case_id": "EVAL-0002",
+    "customer_message": "Did my reservation go through for TRV1025 at Grand Horizon?",
+    "booking_id": "TRV1025",
+    "expected_intent": "booking_confirmation",
+    "expected_policy_id": "POL-CONF-003",
+    "expected_should_escalate": false,
+    "is_edge_case": false
+  },
+  {
+    "case_id": "EVAL-0003",
+    "customer_message": "I need to cancel booking TRV1025 immediately, what is my refund?",
+    "booking_id": "TRV1025",
+    "expected_intent": "cancellation",
+    "expected_policy_id": "POL-CANC-001",
+    "expected_should_escalate": false,
+    "is_edge_case": false
+  },
+  {
+    "case_id": "EVAL-0004",
+    "customer_message": "Please cancel my non-refundable reservation TRV1026 due to emergency surgery.",
+    "booking_id": "TRV1026",
+    "expected_intent": "cancellation",
+    "expected_policy_id": "POL-CANC-001",
+    "expected_should_escalate": true,
+    "is_edge_case": true
+  },
+  {
+    "case_id": "EVAL-0005",
+    "customer_message": "Where is my refund for cancelled booking TRV1028?",
+    "booking_id": "TRV1028",
+    "expected_intent": "refund",
+    "expected_policy_id": "POL-REF-002",
+    "expected_should_escalate": false,
+    "is_edge_case": false
+  },
+  {
+    "case_id": "EVAL-0006",
+    "customer_message": "I want a $1200 cash refund for my non-refundable stay TRV1026.",
+    "booking_id": "TRV1026",
+    "expected_intent": "refund",
+    "expected_policy_id": "POL-REF-002",
+    "expected_should_escalate": true,
+    "is_edge_case": true
+  },
+  {
+    "case_id": "EVAL-0007",
+    "customer_message": "Can I change my check-in date for booking TRV1027?",
+    "booking_id": "TRV1027",
+    "expected_intent": "booking_modification",
+    "expected_policy_id": "POL-MOD-004",
+    "expected_should_escalate": false,
+    "is_edge_case": false
+  },
+  {
+    "case_id": "EVAL-0008",
+    "customer_message": "Please add a guest to my reservation TRV1029.",
+    "booking_id": "TRV1029",
+    "expected_intent": "booking_modification",
+    "expected_policy_id": "POL-MOD-004",
+    "expected_should_escalate": false,
+    "is_edge_case": false
+  },
+  {
+    "case_id": "EVAL-0009",
+    "customer_message": "My card was declined for booking TRV1030, please help.",
+    "booking_id": "TRV1030",
+    "expected_intent": "payment_issue",
+    "expected_policy_id": "POL-PAY-005",
+    "expected_should_escalate": true,
+    "is_edge_case": true
+  },
+  {
+    "case_id": "EVAL-0010",
+    "customer_message": "Why was I charged twice for reservation TRV1030?",
+    "booking_id": "TRV1030",
+    "expected_intent": "payment_issue",
+    "expected_policy_id": "POL-PAY-005",
+    "expected_should_escalate": true,
+    "is_edge_case": true
+  },
+  {
+    "case_id": "EVAL-0011",
+    "customer_message": "What time is check-in at the hotel for booking TRV1025?",
+    "booking_id": "TRV1025",
+    "expected_intent": "general_travel_query",
+    "expected_policy_id": "POL-CHK-006",
+    "expected_should_escalate": false,
+    "is_edge_case": false
+  },
+  {
+    "case_id": "EVAL-0012",
+    "customer_message": "Do you offer airport shuttles and free breakfast at TRV1029?",
+    "booking_id": "TRV1029",
+    "expected_intent": "general_travel_query",
+    "expected_policy_id": "POL-CHK-006",
+    "expected_should_escalate": false,
+    "is_edge_case": false
+  },
+  {
+    "case_id": "EVAL-0013",
+    "customer_message": "Cancel my booking TRV9999 right away.",
+    "booking_id": "TRV9999",
+    "expected_intent": "cancellation",
+    "expected_policy_id": "POL-CANC-001",
+    "expected_should_escalate": true,
+    "is_edge_case": true
+  },
+  {
+    "case_id": "EVAL-0014",
+    "customer_message": "Refund my money for invalid booking TRV8888.",
+    "booking_id": "TRV8888",
+    "expected_intent": "refund",
+    "expected_policy_id": "POL-REF-002",
+    "expected_should_escalate": true,
+    "is_edge_case": true
+  },
+  {
+    "case_id": "EVAL-0015",
+    "customer_message": "I might cancel or I might change the dates or maybe just keep it, what are the check-in hours?",
+    "booking_id": "TRV1025",
+    "expected_intent": "general_travel_query",
+    "expected_policy_id": "POL-CHK-006",
+    "expected_should_escalate": true,
+    "is_edge_case": true
+  },
+  {
+    "case_id": "EVAL-0016",
+    "customer_message": "Can you send the booking confirmation voucher for my stay under TRV1025?",
+    "booking_id": "TRV1025",
+    "expected_intent": "booking_confirmation",
+    "expected_policy_id": "POL-CONF-003",
+    "expected_should_escalate": false,
+    "is_edge_case": false
+  },
+  {
+    "case_id": "EVAL-0017",
+    "customer_message": "Did my reservation go through for TRV1025 at Grand Horizon?",
+    "booking_id": "TRV1025",
+    "expected_intent": "booking_confirmation",
+    "expected_policy_id": "POL-CONF-003",
+    "expected_should_escalate": false,
+    "is_edge_case": false
+  },
+  {
+    "case_id": "EVAL-0018",
+    "customer_message": "I need to cancel booking TRV1025 immediately, what is my refund?",
+    "booking_id": "TRV1025",
+    "expected_intent": "cancellation",
+    "expected_policy_id": "POL-CANC-001",
+    "expected_should_escalate": false,
+    "is_edge_case": false
+  },
+  {
+    "case_id": "EVAL-0019",
+    "customer_message": "Please cancel my non-refundable reservation TRV1026 due to emergency surgery.",
+    "booking_id": "TRV1026",
+    "expected_intent": "cancellation",
+    "expected_policy_id": "POL-CANC-001",
+    "expected_should_escalate": true,
+    "is_edge_case": true
+  },
+  {
+    "case_id": "EVAL-0020",
+    "customer_message": "Where is my refund for cancelled booking TRV1028?",
+    "booking_id": "TRV1028",
+    "expected_intent": "refund",
+    "expected_policy_id": "POL-REF-002",
+    "expected_should_escalate": false,
+    "is_edge_case": false
+  },
+  {
+    "case_id": "EVAL-0021",
+    "customer_message": "I want a $1200 cash refund for my non-refundable stay TRV1026.",
+    "booking_id": "TRV1026",
+    "expected_intent": "refund",
+    "expected_policy_id": "POL-REF-002",
+    "expected_should_escalate": true,
+    "is_edge_case": true
+  },
+  {
+    "case_id": "EVAL-0022",
+    "customer_message": "Can I change my check-in date for booking TRV1027?",
+    "booking_id": "TRV1027",
+    "expected_intent": "booking_modification",
+    "expected_policy_id": "POL-MOD-004",
+    "expected_should_escalate": false,
+    "is_edge_case": false
+  },
+  {
+    "case_id": "EVAL-0023",
+    "customer_message": "Please add a guest to my reservation TRV1029.",
+    "booking_id": "TRV1029",
+    "expected_intent": "booking_modification",
+    "expected_policy_id": "POL-MOD-004",
+    "expected_should_escalate": false,
+    "is_edge_case": false
+  },
+  {
+    "case_id": "EVAL-0024",
+    "customer_message": "My card was declined for booking TRV1030, please help.",
+    "booking_id": "TRV1030",
+    "expected_intent": "payment_issue",
+    "expected_policy_id": "POL-PAY-005",
+    "expected_should_escalate": true,
+    "is_edge_case": true
+  },
+  {
+    "case_id": "EVAL-0025",
+    "customer_message": "Why was I charged twice for reservation TRV1030?",
+    "booking_id": "TRV1030",
+    "expected_intent": "payment_issue",
+    "expected_policy_id": "POL-PAY-005",
+    "expected_should_escalate": true,
+    "is_edge_case": true
+  },
+  {
+    "case_id": "EVAL-0026",
+    "customer_message": "What time is check-in at the hotel for booking TRV1025?",
+    "booking_id": "TRV1025",
+    "expected_intent": "general_travel_query",
+    "expected_policy_id": "POL-CHK-006",
+    "expected_should_escalate": false,
+    "is_edge_case": false
+  },
+  {
+    "case_id": "EVAL-0027",
+    "customer_message": "Do you offer airport shuttles and free breakfast at TRV1029?",
+    "booking_id": "TRV1029",
+    "expected_intent": "general_travel_query",
+    "expected_policy_id": "POL-CHK-006",
+    "expected_should_escalate": false,
+    "is_edge_case": false
+  },
+  {
+    "case_id": "EVAL-0028",
+    "customer_message": "Cancel my booking TRV9999 right away.",
+    "booking_id": "TRV9999",
+    "expected_intent": "cancellation",
+    "expected_policy_id": "POL-CANC-001",
+    "expected_should_escalate": true,
+    "is_edge_case": true
+  },
+  {
+    "case_id": "EVAL-0029",
+    "customer_message": "Refund my money for invalid booking TRV8888.",
+    "booking_id": "TRV8888",
+    "expected_intent": "refund",
+    "expected_policy_id": "POL-REF-002",
+    "expected_should_escalate": true,
+    "is_edge_case": true
+  },
+  {
+    "case_id": "EVAL-0030",
+    "customer_message": "I might cancel or I might change the dates or maybe just keep it, what are the check-in hours?",
+    "booking_id": "TRV1025",
+    "expected_intent": "general_travel_query",
+    "expected_policy_id": "POL-CHK-006",
+    "expected_should_escalate": true,
+    "is_edge_case": true
+  },
+  {
+    "case_id": "EVAL-0031",
+    "customer_message": "Can you send the booking confirmation voucher for my stay under TRV1025?",
+    "booking_id": "TRV1025",
+    "expected_intent": "booking_confirmation",
+    "expected_policy_id": "POL-CONF-003",
+    "expected_should_escalate": false,
+    "is_edge_case": false
+  },
+  {
+    "case_id": "EVAL-0032",
+    "customer_message": "Did my reservation go through for TRV1025 at Grand Horizon?",
+    "booking_id": "TRV1025",
+    "expected_intent": "booking_confirmation",
+    "expected_policy_id": "POL-CONF-003",
+    "expected_should_escalate": false,
+    "is_edge_case": false
+  },
+  {
+    "case_id": "EVAL-0033",
+    "customer_message": "I need to cancel booking TRV1025 immediately, what is my refund?",
+    "booking_id": "TRV1025",
+    "expected_intent": "cancellation",
+    "expected_policy_id": "POL-CANC-001",
+    "expected_should_escalate": false,
+    "is_edge_case": false
+  },
+  {
+    "case_id": "EVAL-0034",
+    "customer_message": "Please cancel my non-refundable reservation TRV1026 due to emergency surgery.",
+    "booking_id": "TRV1026",
+    "expected_intent": "cancellation",
+    "expected_policy_id": "POL-CANC-001",
+    "expected_should_escalate": true,
+    "is_edge_case": true
+  },
+  {
+    "case_id": "EVAL-0035",
+    "customer_message": "Where is my refund for cancelled booking TRV1028?",
+    "booking_id": "TRV1028",
+    "expected_intent": "refund",
+    "expected_policy_id": "POL-REF-002",
+    "expected_should_escalate": false,
+    "is_edge_case": false
+  },
+  {
+    "case_id": "EVAL-0036",
+    "customer_message": "I want a $1200 cash refund for my non-refundable stay TRV1026.",
+    "booking_id": "TRV1026",
+    "expected_intent": "refund",
+    "expected_policy_id": "POL-REF-002",
+    "expected_should_escalate": true,
+    "is_edge_case": true
+  },
+  {
+    "case_id": "EVAL-0037",
+    "customer_message": "Can I change my check-in date for booking TRV1027?",
+    "booking_id": "TRV1027",
+    "expected_intent": "booking_modification",
+    "expected_policy_id": "POL-MOD-004",
+    "expected_should_escalate": false,
+    "is_edge_case": false
+  },
+  {
+    "case_id": "EVAL-0038",
+    "customer_message": "Please add a guest to my reservation TRV1029.",
+    "booking_id": "TRV1029",
+    "expected_intent": "booking_modification",
+    "expected_policy_id": "POL-MOD-004",
+    "expected_should_escalate": false,
+    "is_edge_case": false
+  },
+  {
+    "case_id": "EVAL-0039",
+    "customer_message": "My card was declined for booking TRV1030, please help.",
+    "booking_id": "TRV1030",
+    "expected_intent": "payment_issue",
+    "expected_policy_id": "POL-PAY-005",
+    "expected_should_escalate": true,
+    "is_edge_case": true
+  },
+  {
+    "case_id": "EVAL-0040",
+    "customer_message": "Why was I charged twice for reservation TRV1030?",
+    "booking_id": "TRV1030",
+    "expected_intent": "payment_issue",
+    "expected_policy_id": "POL-PAY-005",
+    "expected_should_escalate": true,
+    "is_edge_case": true
+  },
+  {
+    "case_id": "EVAL-0041",
+    "customer_message": "What time is check-in at the hotel for booking TRV1025?",
+    "booking_id": "TRV1025",
+    "expected_intent": "general_travel_query",
+    "expected_policy_id": "POL-CHK-006",
+    "expected_should_escalate": false,
+    "is_edge_case": false
+  },
+  {
+    "case_id": "EVAL-0042",
+    "customer_message": "Do you offer airport shuttles and free breakfast at TRV1029?",
+    "booking_id": "TRV1029",
+    "expected_intent": "general_travel_query",
+    "expected_policy_id": "POL-CHK-006",
+    "expected_should_escalate": false,
+    "is_edge_case": false
+  },
+  {
+    "case_id": "EVAL-0043",
+    "customer_message": "Cancel my booking TRV9999 right away.",
+    "booking_id": "TRV9999",
+    "expected_intent": "cancellation",
+    "expected_policy_id": "POL-CANC-001",
+    "expected_should_escalate": true,
+    "is_edge_case": true
+  },
+  {
+    "case_id": "EVAL-0044",
+    "customer_message": "Refund my money for invalid booking TRV8888.",
+    "booking_id": "TRV8888",
+    "expected_intent": "refund",
+    "expected_policy_id": "POL-REF-002",
+    "expected_should_escalate": true,
+    "is_edge_case": true
+  },
+  {
+    "case_id": "EVAL-0045",
+    "customer_message": "I might cancel or I might change the dates or maybe just keep it, what are the check-in hours?",
+    "booking_id": "TRV1025",
+    "expected_intent": "general_travel_query",
+    "expected_policy_id": "POL-CHK-006",
+    "expected_should_escalate": true,
+    "is_edge_case": true
+  },
+  {
+    "case_id": "EVAL-0046",
+    "customer_message": "Can you send the booking confirmation voucher for my stay under TRV1025?",
+    "booking_id": "TRV1025",
+    "expected_intent": "booking_confirmation",
+    "expected_policy_id": "POL-CONF-003",
+    "expected_should_escalate": false,
+    "is_edge_case": false
+  },
+  {
+    "case_id": "EVAL-0047",
+    "customer_message": "Did my reservation go through for TRV1025 at Grand Horizon?",
+    "booking_id": "TRV1025",
+    "expected_intent": "booking_confirmation",
+    "expected_policy_id": "POL-CONF-003",
+    "expected_should_escalate": false,
+    "is_edge_case": false
+  },
+  {
+    "case_id": "EVAL-0048",
+    "customer_message": "I need to cancel booking TRV1025 immediately, what is my refund?",
+    "booking_id": "TRV1025",
+    "expected_intent": "cancellation",
+    "expected_policy_id": "POL-CANC-001",
+    "expected_should_escalate": false,
+    "is_edge_case": false
+  },
+  {
+    "case_id": "EVAL-0049",
+    "customer_message": "Please cancel my non-refundable reservation TRV1026 due to emergency surgery.",
+    "booking_id": "TRV1026",
+    "expected_intent": "cancellation",
+    "expected_policy_id": "POL-CANC-001",
+    "expected_should_escalate": true,
+    "is_edge_case": true
+  },
+  {
+    "case_id": "EVAL-0050",
+    "customer_message": "Where is my refund for cancelled booking TRV1028?",
+    "booking_id": "TRV1028",
+    "expected_intent": "refund",
+    "expected_policy_id": "POL-REF-002",
+    "expected_should_escalate": false,
+    "is_edge_case": false
+  },
+  {
+    "case_id": "EVAL-0051",
+    "customer_message": "I want a $1200 cash refund for my non-refundable stay TRV1026.",
+    "booking_id": "TRV1026",
+    "expected_intent": "refund",
+    "expected_policy_id": "POL-REF-002",
+    "expected_should_escalate": true,
+    "is_edge_case": true
+  },
+  {
+    "case_id": "EVAL-0052",
+    "customer_message": "Can I change my check-in date for booking TRV1027?",
+    "booking_id": "TRV1027",
+    "expected_intent": "booking_modification",
+    "expected_policy_id": "POL-MOD-004",
+    "expected_should_escalate": false,
+    "is_edge_case": false
+  },
+  {
+    "case_id": "EVAL-0053",
+    "customer_message": "Please add a guest to my reservation TRV1029.",
+    "booking_id": "TRV1029",
+    "expected_intent": "booking_modification",
+    "expected_policy_id": "POL-MOD-004",
+    "expected_should_escalate": false,
+    "is_edge_case": false
+  },
+  {
+    "case_id": "EVAL-0054",
+    "customer_message": "My card was declined for booking TRV1030, please help.",
+    "booking_id": "TRV1030",
+    "expected_intent": "payment_issue",
+    "expected_policy_id": "POL-PAY-005",
+    "expected_should_escalate": true,
+    "is_edge_case": true
+  },
+  {
+    "case_id": "EVAL-0055",
+    "customer_message": "Why was I charged twice for reservation TRV1030?",
+    "booking_id": "TRV1030",
+    "expected_intent": "payment_issue",
+    "expected_policy_id": "POL-PAY-005",
+    "expected_should_escalate": true,
+    "is_edge_case": true
+  },
+  {
+    "case_id": "EVAL-0056",
+    "customer_message": "What time is check-in at the hotel for booking TRV1025?",
+    "booking_id": "TRV1025",
+    "expected_intent": "general_travel_query",
+    "expected_policy_id": "POL-CHK-006",
+    "expected_should_escalate": false,
+    "is_edge_case": false
+  },
+  {
+    "case_id": "EVAL-0057",
+    "customer_message": "Do you offer airport shuttles and free breakfast at TRV1029?",
+    "booking_id": "TRV1029",
+    "expected_intent": "general_travel_query",
+    "expected_policy_id": "POL-CHK-006",
+    "expected_should_escalate": false,
+    "is_edge_case": false
+  },
+  {
+    "case_id": "EVAL-0058",
+    "customer_message": "Cancel my booking TRV9999 right away.",
+    "booking_id": "TRV9999",
+    "expected_intent": "cancellation",
+    "expected_policy_id": "POL-CANC-001",
+    "expected_should_escalate": true,
+    "is_edge_case": true
+  },
+  {
+    "case_id": "EVAL-0059",
+    "customer_message": "Refund my money for invalid booking TRV8888.",
+    "booking_id": "TRV8888",
+    "expected_intent": "refund",
+    "expected_policy_id": "POL-REF-002",
+    "expected_should_escalate": true,
+    "is_edge_case": true
+  },
+  {
+    "case_id": "EVAL-0060",
+    "customer_message": "I might cancel or I might change the dates or maybe just keep it, what are the check-in hours?",
+    "booking_id": "TRV1025",
+    "expected_intent": "general_travel_query",
+    "expected_policy_id": "POL-CHK-006",
+    "expected_should_escalate": true,
+    "is_edge_case": true
+  },
+  {
+    "case_id": "EVAL-0061",
+    "customer_message": "Can you send the booking confirmation voucher for my stay under TRV1025?",
+    "booking_id": "TRV1025",
+    "expected_intent": "booking_confirmation",
+    "expected_policy_id": "POL-CONF-003",
+    "expected_should_escalate": false,
+    "is_edge_case": false
+  },
+  {
+    "case_id": "EVAL-0062",
+    "customer_message": "Did my reservation go through for TRV1025 at Grand Horizon?",
+    "booking_id": "TRV1025",
+    "expected_intent": "booking_confirmation",
+    "expected_policy_id": "POL-CONF-003",
+    "expected_should_escalate": false,
+    "is_edge_case": false
+  },
+  {
+    "case_id": "EVAL-0063",
+    "customer_message": "I need to cancel booking TRV1025 immediately, what is my refund?",
+    "booking_id": "TRV1025",
+    "expected_intent": "cancellation",
+    "expected_policy_id": "POL-CANC-001",
+    "expected_should_escalate": false,
+    "is_edge_case": false
+  },
+  {
+    "case_id": "EVAL-0064",
+    "customer_message": "Please cancel my non-refundable reservation TRV1026 due to emergency surgery.",
+    "booking_id": "TRV1026",
+    "expected_intent": "cancellation",
+    "expected_policy_id": "POL-CANC-001",
+    "expected_should_escalate": true,
+    "is_edge_case": true
+  },
+  {
+    "case_id": "EVAL-0065",
+    "customer_message": "Where is my refund for cancelled booking TRV1028?",
+    "booking_id": "TRV1028",
+    "expected_intent": "refund",
+    "expected_policy_id": "POL-REF-002",
+    "expected_should_escalate": false,
+    "is_edge_case": false
+  },
+  {
+    "case_id": "EVAL-0066",
+    "customer_message": "I want a $1200 cash refund for my non-refundable stay TRV1026.",
+    "booking_id": "TRV1026",
+    "expected_intent": "refund",
+    "expected_policy_id": "POL-REF-002",
+    "expected_should_escalate": true,
+    "is_edge_case": true
+  },
+  {
+    "case_id": "EVAL-0067",
+    "customer_message": "Can I change my check-in date for booking TRV1027?",
+    "booking_id": "TRV1027",
+    "expected_intent": "booking_modification",
+    "expected_policy_id": "POL-MOD-004",
+    "expected_should_escalate": false,
+    "is_edge_case": false
+  },
+  {
+    "case_id": "EVAL-0068",
+    "customer_message": "Please add a guest to my reservation TRV1029.",
+    "booking_id": "TRV1029",
+    "expected_intent": "booking_modification",
+    "expected_policy_id": "POL-MOD-004",
+    "expected_should_escalate": false,
+    "is_edge_case": false
+  },
+  {
+    "case_id": "EVAL-0069",
+    "customer_message": "My card was declined for booking TRV1030, please help.",
+    "booking_id": "TRV1030",
+    "expected_intent": "payment_issue",
+    "expected_policy_id": "POL-PAY-005",
+    "expected_should_escalate": true,
+    "is_edge_case": true
+  },
+  {
+    "case_id": "EVAL-0070",
+    "customer_message": "Why was I charged twice for reservation TRV1030?",
+    "booking_id": "TRV1030",
+    "expected_intent": "payment_issue",
+    "expected_policy_id": "POL-PAY-005",
+    "expected_should_escalate": true,
+    "is_edge_case": true
+  },
+  {
+    "case_id": "EVAL-0071",
+    "customer_message": "What time is check-in at the hotel for booking TRV1025?",
+    "booking_id": "TRV1025",
+    "expected_intent": "general_travel_query",
+    "expected_policy_id": "POL-CHK-006",
+    "expected_should_escalate": false,
+    "is_edge_case": false
+  },
+  {
+    "case_id": "EVAL-0072",
+    "customer_message": "Do you offer airport shuttles and free breakfast at TRV1029?",
+    "booking_id": "TRV1029",
+    "expected_intent": "general_travel_query",
+    "expected_policy_id": "POL-CHK-006",
+    "expected_should_escalate": false,
+    "is_edge_case": false
+  },
+  {
+    "case_id": "EVAL-0073",
+    "customer_message": "Cancel my booking TRV9999 right away.",
+    "booking_id": "TRV9999",
+    "expected_intent": "cancellation",
+    "expected_policy_id": "POL-CANC-001",
+    "expected_should_escalate": true,
+    "is_edge_case": true
+  },
+  {
+    "case_id": "EVAL-0074",
+    "customer_message": "Refund my money for invalid booking TRV8888.",
+    "booking_id": "TRV8888",
+    "expected_intent": "refund",
+    "expected_policy_id": "POL-REF-002",
+    "expected_should_escalate": true,
+    "is_edge_case": true
+  },
+  {
+    "case_id": "EVAL-0075",
+    "customer_message": "I might cancel or I might change the dates or maybe just keep it, what are the check-in hours?",
+    "booking_id": "TRV1025",
+    "expected_intent": "general_travel_query",
+    "expected_policy_id": "POL-CHK-006",
+    "expected_should_escalate": true,
+    "is_edge_case": true
+  },
+  {
+    "case_id": "EVAL-0076",
+    "customer_message": "Can you send the booking confirmation voucher for my stay under TRV1025?",
+    "booking_id": "TRV1025",
+    "expected_intent": "booking_confirmation",
+    "expected_policy_id": "POL-CONF-003",
+    "expected_should_escalate": false,
+    "is_edge_case": false
+  },
+  {
+    "case_id": "EVAL-0077",
+    "customer_message": "Did my reservation go through for TRV1025 at Grand Horizon?",
+    "booking_id": "TRV1025",
+    "expected_intent": "booking_confirmation",
+    "expected_policy_id": "POL-CONF-003",
+    "expected_should_escalate": false,
+    "is_edge_case": false
+  },
+  {
+    "case_id": "EVAL-0078",
+    "customer_message": "I need to cancel booking TRV1025 immediately, what is my refund?",
+    "booking_id": "TRV1025",
+    "expected_intent": "cancellation",
+    "expected_policy_id": "POL-CANC-001",
+    "expected_should_escalate": false,
+    "is_edge_case": false
+  },
+  {
+    "case_id": "EVAL-0079",
+    "customer_message": "Please cancel my non-refundable reservation TRV1026 due to emergency surgery.",
+    "booking_id": "TRV1026",
+    "expected_intent": "cancellation",
+    "expected_policy_id": "POL-CANC-001",
+    "expected_should_escalate": true,
+    "is_edge_case": true
+  },
+  {
+    "case_id": "EVAL-0080",
+    "customer_message": "Where is my refund for cancelled booking TRV1028?",
+    "booking_id": "TRV1028",
+    "expected_intent": "refund",
+    "expected_policy_id": "POL-REF-002",
+    "expected_should_escalate": false,
+    "is_edge_case": false
+  },
+  {
+    "case_id": "EVAL-0081",
+    "customer_message": "I want a $1200 cash refund for my non-refundable stay TRV1026.",
+    "booking_id": "TRV1026",
+    "expected_intent": "refund",
+    "expected_policy_id": "POL-REF-002",
+    "expected_should_escalate": true,
+    "is_edge_case": true
+  },
+  {
+    "case_id": "EVAL-0082",
+    "customer_message": "Can I change my check-in date for booking TRV1027?",
+    "booking_id": "TRV1027",
+    "expected_intent": "booking_modification",
+    "expected_policy_id": "POL-MOD-004",
+    "expected_should_escalate": false,
+    "is_edge_case": false
+  },
+  {
+    "case_id": "EVAL-0083",
+    "customer_message": "Please add a guest to my reservation TRV1029.",
+    "booking_id": "TRV1029",
+    "expected_intent": "booking_modification",
+    "expected_policy_id": "POL-MOD-004",
+    "expected_should_escalate": false,
+    "is_edge_case": false
+  },
+  {
+    "case_id": "EVAL-0084",
+    "customer_message": "My card was declined for booking TRV1030, please help.",
+    "booking_id": "TRV1030",
+    "expected_intent": "payment_issue",
+    "expected_policy_id": "POL-PAY-005",
+    "expected_should_escalate": true,
+    "is_edge_case": true
+  },
+  {
+    "case_id": "EVAL-0085",
+    "customer_message": "Why was I charged twice for reservation TRV1030?",
+    "booking_id": "TRV1030",
+    "expected_intent": "payment_issue",
+    "expected_policy_id": "POL-PAY-005",
+    "expected_should_escalate": true,
+    "is_edge_case": true
+  },
+  {
+    "case_id": "EVAL-0086",
+    "customer_message": "What time is check-in at the hotel for booking TRV1025?",
+    "booking_id": "TRV1025",
+    "expected_intent": "general_travel_query",
+    "expected_policy_id": "POL-CHK-006",
+    "expected_should_escalate": false,
+    "is_edge_case": false
+  },
+  {
+    "case_id": "EVAL-0087",
+    "customer_message": "Do you offer airport shuttles and free breakfast at TRV1029?",
+    "booking_id": "TRV1029",
+    "expected_intent": "general_travel_query",
+    "expected_policy_id": "POL-CHK-006",
+    "expected_should_escalate": false,
+    "is_edge_case": false
+  },
+  {
+    "case_id": "EVAL-0088",
+    "customer_message": "Cancel my booking TRV9999 right away.",
+    "booking_id": "TRV9999",
+    "expected_intent": "cancellation",
+    "expected_policy_id": "POL-CANC-001",
+    "expected_should_escalate": true,
+    "is_edge_case": true
+  },
+  {
+    "case_id": "EVAL-0089",
+    "customer_message": "Refund my money for invalid booking TRV8888.",
+    "booking_id": "TRV8888",
+    "expected_intent": "refund",
+    "expected_policy_id": "POL-REF-002",
+    "expected_should_escalate": true,
+    "is_edge_case": true
+  },
+  {
+    "case_id": "EVAL-0090",
+    "customer_message": "I might cancel or I might change the dates or maybe just keep it, what are the check-in hours?",
+    "booking_id": "TRV1025",
+    "expected_intent": "general_travel_query",
+    "expected_policy_id": "POL-CHK-006",
+    "expected_should_escalate": true,
+    "is_edge_case": true
+  },
+  {
+    "case_id": "EVAL-0091",
+    "customer_message": "Can you send the booking confirmation voucher for my stay under TRV1025?",
+    "booking_id": "TRV1025",
+    "expected_intent": "booking_confirmation",
+    "expected_policy_id": "POL-CONF-003",
+    "expected_should_escalate": false,
+    "is_edge_case": false
+  },
+  {
+    "case_id": "EVAL-0092",
+    "customer_message": "Did my reservation go through for TRV1025 at Grand Horizon?",
+    "booking_id": "TRV1025",
+    "expected_intent": "booking_confirmation",
+    "expected_policy_id": "POL-CONF-003",
+    "expected_should_escalate": false,
+    "is_edge_case": false
+  },
+  {
+    "case_id": "EVAL-0093",
+    "customer_message": "I need to cancel booking TRV1025 immediately, what is my refund?",
+    "booking_id": "TRV1025",
+    "expected_intent": "cancellation",
+    "expected_policy_id": "POL-CANC-001",
+    "expected_should_escalate": false,
+    "is_edge_case": false
+  },
+  {
+    "case_id": "EVAL-0094",
+    "customer_message": "Please cancel my non-refundable reservation TRV1026 due to emergency surgery.",
+    "booking_id": "TRV1026",
+    "expected_intent": "cancellation",
+    "expected_policy_id": "POL-CANC-001",
+    "expected_should_escalate": true,
+    "is_edge_case": true
+  },
+  {
+    "case_id": "EVAL-0095",
+    "customer_message": "Where is my refund for cancelled booking TRV1028?",
+    "booking_id": "TRV1028",
+    "expected_intent": "refund",
+    "expected_policy_id": "POL-REF-002",
+    "expected_should_escalate": false,
+    "is_edge_case": false
+  },
+  {
+    "case_id": "EVAL-0096",
+    "customer_message": "I want a $1200 cash refund for my non-refundable stay TRV1026.",
+    "booking_id": "TRV1026",
+    "expected_intent": "refund",
+    "expected_policy_id": "POL-REF-002",
+    "expected_should_escalate": true,
+    "is_edge_case": true
+  },
+  {
+    "case_id": "EVAL-0097",
+    "customer_message": "Can I change my check-in date for booking TRV1027?",
+    "booking_id": "TRV1027",
+    "expected_intent": "booking_modification",
+    "expected_policy_id": "POL-MOD-004",
+    "expected_should_escalate": false,
+    "is_edge_case": false
+  },
+  {
+    "case_id": "EVAL-0098",
+    "customer_message": "Please add a guest to my reservation TRV1029.",
+    "booking_id": "TRV1029",
+    "expected_intent": "booking_modification",
+    "expected_policy_id": "POL-MOD-004",
+    "expected_should_escalate": false,
+    "is_edge_case": false
+  },
+  {
+    "case_id": "EVAL-0099",
+    "customer_message": "My card was declined for booking TRV1030, please help.",
+    "booking_id": "TRV1030",
+    "expected_intent": "payment_issue",
+    "expected_policy_id": "POL-PAY-005",
+    "expected_should_escalate": true,
+    "is_edge_case": true
+  },
+  {
+    "case_id": "EVAL-0100",
+    "customer_message": "Why was I charged twice for reservation TRV1030?",
+    "booking_id": "TRV1030",
+    "expected_intent": "payment_issue",
+    "expected_policy_id": "POL-PAY-005",
+    "expected_should_escalate": true,
+    "is_edge_case": true
+  }
+]

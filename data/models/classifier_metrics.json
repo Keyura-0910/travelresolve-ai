@@ -1,0 +1,107 @@
+{
+  "model_architecture": "TF-IDF (1,2 n-grams) + LogisticRegression (balanced)",
+  "train_samples": 120,
+  "test_samples": 30,
+  "total_samples": 150,
+  "accuracy": 0.9,
+  "macro_f1": 0.8956,
+  "macro_precision": 0.9028,
+  "macro_recall": 0.9,
+  "classes": [
+    "booking_confirmation",
+    "booking_modification",
+    "cancellation",
+    "general_travel_query",
+    "payment_issue",
+    "refund"
+  ],
+  "confusion_matrix": [
+    [
+      5,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      3,
+      1,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      5,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      4,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      5,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      5
+    ]
+  ],
+  "per_class_report": {
+    "booking_confirmation": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "support": 5
+    },
+    "booking_modification": {
+      "precision": 0.75,
+      "recall": 0.6,
+      "f1_score": 0.6667,
+      "support": 5
+    },
+    "cancellation": {
+      "precision": 0.8333,
+      "recall": 1.0,
+      "f1_score": 0.9091,
+      "support": 5
+    },
+    "general_travel_query": {
+      "precision": 1.0,
+      "recall": 0.8,
+      "f1_score": 0.8889,
+      "support": 5
+    },
+    "payment_issue": {
+      "precision": 0.8333,
+      "recall": 1.0,
+      "f1_score": 0.9091,
+      "support": 5
+    },
+    "refund": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "support": 5
+    }
+  },
+  "dataset_disclaimer": "Trained on synthetic travel support utterances. Not validated on production customer data."
+}
