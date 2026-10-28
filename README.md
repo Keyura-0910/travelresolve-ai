@@ -1,7 +1,7 @@
 # TravelResolve — Booking-Aware Multi-Agent Support Automation
 
 **Author:** [Keyura Motegaonkar](https://github.com/Keyura-0910)  
-**Role:** AI Engineer  
+**Role:** Aspiring AI Engineer  
 
 [![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue.svg)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.110%2B-009688.svg)](https://fastapi.tiangolo.com/)
